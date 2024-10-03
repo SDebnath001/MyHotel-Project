@@ -35,4 +35,10 @@ nodemon main.js
 It will initilize the ``express.JS`` file and nodemon will start a server on your computer local host:3000.
 
 Just open your internwt browser and type 
-`` localhoast:3000 `` in the URL bar.
+`` localhoast:3000 `` in the URL bar. Then you navigate through the pages and fill the BookRoom page form and submit.
+
+
+####
+NOTE: 
+
+``This is just a simple pages. In future might add new features and listing price for veriouse hotel selections.``
