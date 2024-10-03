@@ -1,0 +1,20 @@
+{
+  "name": "myhotel-project",
+  "version": "1.0.0",
+  "description": "Welcome! This is a simple replica of a hotel booking site which is created for testing my Front-End and Back-End knowledge. This includes selecting hotels ratings from 3 stars upto 5 stars and different price tags for different ratings and quality of rooms.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.21.0",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "nodemon": "^3.1.7"
+  }
+}

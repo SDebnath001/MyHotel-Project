@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHotel</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="logo">MyHotel.com</div>
+                <div class="nav-items">
+                    <a href="home.html"><div class="nav-links active-nav">Home</div></a>
+                    <a href="BookRoom.html"><div class="nav-links">Book Room</div></a>
+                    <a href="#footer"><div class="nav-links">Contact Us</div></a>
+                    <a href="#footer"><div class="nav-links">About</div></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="search-area">
+            <div class="search">
+                <div class="input-group">
+                    <input type="text" class="input-field" placeholder="Search Here">
+                    <button class="btn" type="button" id="Search-button" onclick="alert('Not usable, just a demo. Sorry!')">Search</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/public/hotel-2.jpg" class="img-slide" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="/public/hotel-1.jpg" class="img-slide" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="/public/hotel-3.jpg" class="img-slide" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+    <main>
+        <div class="banner-heading">
+            Welcome to MyHotel.com
+        </div>
+    </main>
+    <main>
+        <div class="info-head">
+            <div class="info">
+                Finding hotels for a reasonable price and comfort ? Worry no more, get hotels which best suits you. 
+            </div>
+            <div class="info">
+                Register now and book one fast.
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="Hcards" style="cursor: pointer;">
+                <div class="Hlist">
+                    <div class="C-img" data-bs-target="#modal-1" data-bs-toggle="modal">
+                        <img src="/public/hotel-7.jpg" alt="">
+                    </div>
+                    <div style="padding-top: 1em;">
+                        <div class="H-name">Palm Villa Gateway</div>
+                        <div class="sub">Ratings</div>
+                        <div class="sub">AB 57th Lanne, NYC</div>
+                    </div>
+                </div>
+            
+                <div class="Hlist">
+                    <div class="C-img" data-bs-target="#modal-2" data-bs-toggle="modal">
+                        <img src="/public/hotel-6.jpg" alt="">
+                    </div>
+                    <div style="padding-top: 1em;">
+                        <div class="H-name">Palm Villa Gateway</div>
+                        <div class="sub">Ratings</div>
+                        <div class="sub">AB 57th Lanne, NYC</div>
+                    </div>
+                </div>
+            
+            
+                <div class="Hlist">
+                    <div class="C-img" data-bs-target="#modal-3" data-bs-toggle="modal">
+                        <img src="/public/hotel-5.jpg" alt="">
+                    </div>
+                    
+                    <div style="padding-top: 1em;">
+                        <div class="H-name">Palm Villa Gateway</div>
+                        <div class="sub">Ratings</div>
+                        <div class="sub">AB 57th Lanne, NYC</div>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="Hcards" style="cursor: pointer;">
+            
+                <div class="Hlist">
+                    <div class="C-img" data-bs-target="#modal-4" data-bs-toggle="modal">
+                        <img src="/public/hotel-4.jpg" alt="">
+                    </div>
+                    
+                    <div style="padding-top: 1em;">
+                        <div class="H-name">Palm Villa Gateway</div>
+                        <div class="sub">Ratings</div>
+                        <div class="sub">AB 57th Lanne, NYC</div>
+                    </div>
+                </div>
+            
+            
+                <div class="Hlist">
+                    <div class="C-img" data-bs-target="#modal-5" data-bs-toggle="modal">
+                        <img src="/public/hotel-3.jpg" alt="">
+                    </div>
+                    
+                    <div style="padding-top: 1em;">
+                        <div class="H-name">Palm Villa Gateway</div>
+                        <div class="sub">Ratings</div>
+                        <div class="sub">AB 57th Lanne, NYC</div>
+                    </div>
+                </div>
+            
+            
+                <div class="Hlist">
+                    <div class="C-img" data-bs-target="#modal-6" data-bs-toggle="modal">
+                        <img src="/public/hotel-2.jpg" alt="">
+                    </div>
+                    
+                    <div style="padding-top: 1em;">
+                        <div class="H-name">Palm Villa Gateway</div>
+                        <div class="sub">Ratings</div>
+                        <div class="sub">AB 57th Lanne, NYC</div>
+                    </div>
+                </div>
+            
+        </div>
+        <div id="modal-section">
+            <div class="first-card">
+                <div class="modal fade" id="modal-1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="/public/hotel-7.jpg" alt="" class="w-100 pt-3">
+                            <button class="book-btn" onclick="location.href = 'BookRoom.html'">Book Now</button>
+                            <div class="mt-lg-4 mt-3 text-white">
+                                <label class="form-label fs-2">Palm Villa Gateway</label>
+                                <p class="rating-modal">Ratings</p>
+                                <p class="desc-modal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secnd-card">
+                <div class="modal fade" id="modal-2">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="/public/hotel-6.jpg" alt="" class="w-100 pt-3">
+                            <button class="book-btn" onclick="location.href = 'BookRoom.html'">Book Now</button>
+                            <div class="mt-lg-4 mt-3 text-white">
+                                <label class="form-label fs-2">Palm Villa Gateway</label>
+                                <p class="rating-modal">Ratings</p>
+                                <p class="desc-modal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-card">
+                <div class="modal fade" id="modal-3">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="/public/hotel-5.jpg" alt="" class="w-100 pt-3">
+                            <button class="book-btn" onclick="location.href = 'BookRoom.html'">Book Now</button>
+                            <div class="mt-lg-4 mt-3 text-white">
+                                <label class="form-label fs-2">Palm Villa Gateway</label>
+                                <p class="rating-modal">Ratings</p>
+                                <p class="desc-modal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forth-card">
+                <div class="modal fade" id="modal-4">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="/public/hotel-4.jpg" alt="" class="w-100 pt-3">
+                            <button class="book-btn" onclick="location.href = 'BookRoom.html'">Book Now</button>
+                            <div class="mt-lg-4 mt-3 text-white">
+                                <label class="form-label fs-2">Palm Villa Gateway</label>
+                                <p class="rating-modal">Ratings</p>
+                                <p class="desc-modal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth-card">
+                <div class="modal fade" id="modal-5">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="/public/hotel-3.jpg" alt="" class="w-100 pt-3">
+                            <button class="book-btn" onclick="location.href = 'BookRoom.html'">Book Now</button>
+                            <div class="mt-lg-4 mt-3 text-white">
+                                <label class="form-label fs-2">Palm Villa Gateway</label>
+                                <p class="rating-modal">Ratings</p>
+                                <p class="desc-modal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixth-card">
+                <div class="modal fade" id="modal-6">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="/public/hotel-2.jpg" alt="" class="w-100 pt-3">
+                            <button class="book-btn" onclick="location.href = 'BookRoom.html'">Book Now</button>
+                            <div class="mt-lg-4 mt-3 text-white">
+                                <label class="form-label fs-2">Palm Villa Gateway</label>
+                                <p class="rating-modal">Ratings</p>
+                                <p class="desc-modal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="customar">
+            <div class="cs-say">
+                Customer Feedbacks
+            </div>
+        </div>
+        <div class="feedback-section">
+            <div class="feedback">
+                <div class="review-box">
+                    <div class="customer-review">
+                        <div class="cs-name">J.K Williams</div>
+                    </div>
+                    <div class="cs-feedback">
+                        “ A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. “
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="review-box">
+                    <div class="customer-review">
+                        <div class="cs-name">K Hamsworth</div>
+                    </div>
+                    <div class="cs-feedback">
+                        “ A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. “
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="review-box">
+                    <div class="customer-review">
+                        <div class="cs-name">Criss Jr.</div>
+                    </div>
+                    <div class="cs-feedback">
+                        “ A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. “
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="footer-Section">
+            <div class="company">
+                <div class="company_name">MyHotel.com</div>
+            </div>
+            <div class="Navigation_Links">
+                <div><a href="home.html">Home</a></div>
+                <div><a href="Book Room.html">Book Room</a></div>
+                <div><a href="" onclick="alert('Not real link just a demo.')">Contact Us</a></div>
+                <div><a href="" onclick="alert('Not real link just a demo.')">About</a></div>
+                <div><a href="" onclick="alert('Not real link just a demo.')">Privacy & Policy</a></div>
+            </div>
+            <div class="Contact_links">
+                <div><a onclick="alert('not a real mail')" href="#">myhotecontact01@gmail.com</a></div>
+                <div>ABC streets, DC Block, Random, WB</div>
+                <div>+91 254679489</div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=100008611608462" target="_blank"><span class="bi bi-facebook"></span></a>
+                    <a href="mailto:debnathsubham957@gmail.com"><span class="bi bi-envelope-at-fill"></span></a>
+                    <a href="https://www.linkedin.com/in/subham-debnath-b9056b2aa" target="_blank"><span class="bi bi-linkedin"></span></a>
+                    <a href="" onclick="alert('Not real link just a demo.')"><span class="bi bi-telephone-fill"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright 2024 &copy; All rights reserved.
+        </div>
+    </footer>
+
+    
+    <script src="home.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

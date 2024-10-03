@@ -1,0 +1,413 @@
+/* imported text files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Labrada:ital,wght@0,100..900;1,100..900&family=Monoton&family=New+Rocker&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Tangerine:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* utility class */
+.active-nav {
+    font-weight: 800;
+    color: orangered;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4em;
+    margin: 0 1em;
+}
+
+.nav-items {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items .nav-links {
+    font-family: "Labrada", serif;
+    font-style: normal;
+    font-size: 1em;
+    padding-top: 1em;
+    transition: 0.6s;
+}
+
+.nav-links:hover {
+    color: orangered;
+    transition: 0.2s;
+}
+
+.logo {
+    font-family: "Poiret One", system-ui;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.3em;
+}
+
+.carousel-item {
+    height: 30em;
+    width: 100%;
+}
+
+.img-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-area {
+    position: absolute;
+    z-index: 10;
+    top: 10em;
+    left: 22em;
+}
+
+.search {
+    width: 40em;
+    height: 3em;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.search:hover {
+    box-shadow: 0px 0px 15px aquamarine;
+    transition: 0.2s;
+}
+
+.input-field {
+    padding-left: 2em;
+    width: 35em;
+    height: 3em;
+    background-color: transparent;
+    border: none;
+    border-radius: 1em;
+    color: white;
+}
+
+#Search-button {
+    color: white;
+    border: none;
+}
+
+#Search-button:hover {
+    color: aqua;
+}
+
+.carousel {
+    position: relative;
+}
+
+.info {
+    font-family: "Labrada", serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+.info-head {
+    padding: 3em 0em;
+}
+
+.banner-heading {
+    position: absolute;
+    bottom: 2em;
+    left: 3.5em;
+    color: white;
+    font-size: 4.5em;
+    font-family: "Poiret One", system-ui;
+    font-style: normal;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px);
+    padding: 0 1em;
+}
+
+.Hcards {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 8em;
+}
+
+.Hcards a {
+    text-decoration: none;
+    color: black;
+}
+
+.Hlist img {
+    border-radius: 1.4em;
+}
+
+.H-name {
+    font-family: "Labrada", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: large;
+}
+
+.sub {
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-size: small;
+}
+
+.C-img {
+    width: 20em;
+    height: 13em;
+}
+
+.C-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.C-img img:hover {
+    scale: 1.1;
+    transition: 0.3s;
+    box-shadow: 6px 10px 15px gray;
+}
+
+.customar {
+    display: flex;
+    justify-content: center;
+}
+
+.cs-say {
+    font-weight: 800;
+    font-size: 1.7em;
+    font-family: "DM Serif Display", system-ui;
+    padding: 2em 0em;
+}
+
+.feedback-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.feedback {
+    background-color: rgba(212, 212, 212, 0.521);
+    width: 25em;
+    height: 12em;
+    border-radius: 2em;
+}
+
+.review-box {
+    padding: 2em;
+}
+
+.customer-review {
+    padding-bottom: 1em;
+}
+
+.cs-name {
+    font-family: "DM Serif Display", system-ui;
+    font-weight: 600;
+}
+
+.cs-feedback {
+    font-family: "Poppins", system-ui;
+    font-size: 0.8em;
+}
+
+/* footer Css */
+footer {
+    margin-top: 5em;
+    bottom: 0;
+    background: linear-gradient(to right, #35006A, #225565, #A05CF5);
+    color: white;
+}
+
+.footer-Section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 1.3em;
+}
+
+.company_name {
+    font-weight: 500;
+    font-family: "DM Serif Display", system-ui;
+    font-size: 1.6em;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: smaller;
+}
+
+.Navigation_Links {
+    font-family: "Labrada", serif;
+}
+
+.Navigation_Links a {
+    text-decoration: none;
+    color: white;
+}
+
+.Navigation_Links a:hover {
+    color: orangered;
+}
+
+.Contact_links {
+    font-family: "Labrada", serif;
+}
+
+.Contact_links a {
+    text-decoration: none;
+    color: white;
+}
+
+.Contact_links a:hover {
+    color: black;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.icons {
+    padding: 2em;
+}
+
+.bi {
+    margin-right: 1em;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+/* Book Room CSS */
+.form {
+    margin: 2em 10em;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    padding: 3em;
+    border-radius: 2em;
+    box-shadow: 5px 10px 20px rgba(128, 128, 128, 0.685);
+}
+
+.form-label {
+    font-family: "Labrada", serif;
+    font-weight: 600;
+}
+
+.form-check, select {
+    cursor: pointer;
+}
+
+dt {
+    font-family: "Labrada", serif;
+}
+
+.thanks {
+    font-family: "Poiret One", system-ui;
+    font-size: 2.3em; 
+    font-weight: 600;
+}
+
+.details {
+    font-family: "Labrada", serif;
+    text-transform: uppercase;
+}
+.form-details {
+    border: 1px solid rgba(192, 192, 192, 0.425);
+    border-radius: 2em;
+    box-shadow: 5px 10px 10px rgba(163, 163, 163, 0.596);
+}
+
+#backtohome:hover {
+    box-shadow: 0px 0px 30px rgb(19, 241, 11);
+}
+
+.modal-body {
+    background-color: #1d1d1d;
+}
+.rating-modal {
+    font-size: smaller;
+}
+.desc-modal {
+    font-size: smaller;
+    padding: 1.3em 0em;
+}
+.book-btn {
+    margin-top: -20px;
+    border: none;
+    padding: 0.8em 3em;
+    font-family: "Poiret One", system-ui;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.book-btn:hover {
+    background-color: #f05e25;
+    color: #fff;
+    scale: 1.2;
+    border-radius: 0.4em;
+    transform: translateX(30px);
+}
+@media only screen and (max-width: 600px) {
+    .Hcards {
+        display: block;
+        padding: 0em 1.7em;
+    }
+
+    .Hlist {
+        width: 100%;
+        padding: 2em 0em;
+    }
+
+    .feedback-section {
+        display: block;
+    }
+
+    .feedback {
+        width: 20em;
+        height: 12em;
+        margin: 2em 0em;
+    }
+
+    .customer-review {
+        padding: 0;
+    }
+
+    .footer-Section {
+        display: block;
+    }
+
+    .Navigation_Links {
+        margin: 1em 0em;
+    }
+
+    .Contact_links {
+        margin: 1em 0em;
+    }
+
+    .search-area {
+        top: 15em;
+        left: 1em;
+    }
+
+    .search {
+        width: 22em;
+    }
+
+    .banner-heading {
+        display: none;
+    }
+
+    .form {
+        margin: 1em 3em;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+    
+}

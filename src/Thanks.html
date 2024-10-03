@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks for Booking</title>
+    <link rel="stylesheet" href="home.css" />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="logo">MyHotel.com</div>
+          <div class="nav-items">
+            <a href="home.html"><div class="nav-links">Home</div></a>
+            <a href="BookRoom.html"><div class="nav-links">Book Room</div></a>
+            <a href="#footer"><div class="nav-links">Contact Us</div></a>
+            <a href="#footer"><div class="nav-links">About</div></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="thanks text-center">
+        Thanks for Booking Room from us.
+        <p>Enjoy Your Stay!</p>
+      </div>
+      <div class="details text-center text-primary fs-2 pt-5">
+        - Your Details -
+      </div>
+    </main>
+    <main>
+      <div class="container w-50">
+        <div class="form-details p-lg-5 p-3" id="formData"></div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-outline-success mt-lg-5 mt-2" type="button" id="backtohome">Back to Home</button>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer-Section">
+        <div class="company">
+          <div class="company_name">MyHotel.com</div>
+        </div>
+        <div class="Navigation_Links">
+          <div><a href="">Home</a></div>
+          <div><a href="">Book Room</a></div>
+          <div>
+            <a href="" onclick="alert('Not real link just a demo.')"
+              >Contact Us</a
+            >
+          </div>
+          <div>
+            <a href="" onclick="alert('Not real link just a demo.')">About</a>
+          </div>
+          <div>
+            <a href="" onclick="alert('Not real link just a demo.')"
+              >Privacy & Policy</a
+            >
+          </div>
+        </div>
+        <div class="Contact_links">
+          <div>
+            <a onclick="alert('not a real mail')" href="#"
+              >myhotecontact01@gmail.com</a
+            >
+          </div>
+          <div>ABC streets, DC Block, Random, WB</div>
+          <div>+91 254679489</div>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100008611608462"
+              target="_blank"
+              ><span class="bi bi-facebook"></span
+            ></a>
+            <a href="mailto:debnathsubham957@gmail.com"
+              ><span class="bi bi-envelope-at-fill"></span
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/subham-debnath-b9056b2aa"
+              target="_blank"
+              ><span class="bi bi-linkedin"></span
+            ></a>
+            <a href="" onclick="alert('Not real link just a demo.')"
+              ><span class="bi bi-telephone-fill"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright 2024 &copy; All rights reserved.</div>
+    </footer>
+
+
+    <!-- JS SCript here -->
+    <script>
+      const jsonT = localStorage.getItem("form");
+      const object = JSON.parse(jsonT);
+
+      let content = "";
+
+      const Room = object["Room-Type"];
+      const personCount = object["Persons"];
+
+      // Base prices for room types
+      let Baseprice = 0;
+      if (Room === "AC") {
+        Baseprice = 2000;
+      } else {
+        Baseprice = 1000;
+      }
+
+      // Person cost per head.
+      let PersonCost = 350;
+
+      // Converted person count to integer.
+      const TotalPerson = parseInt(personCount);
+
+      // Calculated total cost.
+      const TotalPrice = Baseprice + TotalPerson * PersonCost;
+
+      for (key in object) {
+        content += `
+    <div>
+        <dt class="fs-5">${key}</dt>
+        <dd>${object[key]}</dd>
+    </div>
+    `;
+      }
+      content += `
+                <div>
+                    <dt class="fs-2 text-success">Total Cost</dt>
+                    <dd class="text-danger fs-3">${TotalPrice} INR</dd>
+                </div>
+                `;
+      document.getElementById("formData").innerHTML = content;
+
+
+
+    document.getElementById("backtohome").addEventListener("click", ()=> {
+        location.href = "home.html";
+    })
+    </script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
