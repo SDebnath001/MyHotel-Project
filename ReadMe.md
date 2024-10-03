@@ -41,4 +41,4 @@ Just open your internwt browser and type
 ####
 NOTE: 
 
-``This is just a simple pages. In future might add new features and listing price for veriouse hotel selections.``
+``This is just simple pages. In future might add new features and listing price for veriouse hotel selections.``
